@@ -110,7 +110,7 @@ fun LoginScreen() {
 
 @Composable
 fun OtherSection() {
-    Row(modifier = Modifier.padding(10.dp)) {
+    Row(modifier = Modifier.padding(top = 10.dp)) {
         Box(modifier = Modifier
             .shadow(elevation = 3.dp, spotColor = WhiteShadow)
             .clickable { }
@@ -126,27 +126,28 @@ fun OtherSection() {
         Box(modifier = Modifier
             .shadow(elevation = 3.dp, spotColor = WhiteShadow)
             .clickable { }
-            .clip(RoundedCornerShape(10.dp))
             .background(White)
+            .clip(RoundedCornerShape(5.dp))
             .padding(start = 38.dp, top = 18.dp, bottom = 18.dp, end = 38.dp)
         ) {
             Image(
                 painter = painterResource(id = R.drawable.facebook),
-                contentDescription = "This is gmail"
+                contentDescription = "This is facebook"
             )
         }
         Box(modifier = Modifier
             .shadow(elevation = 3.dp, spotColor = WhiteShadow)
             .clickable { }
-            .clip(RoundedCornerShape(10.dp))
             .background(White)
+            .clip(RoundedCornerShape(5.dp))
             .padding(start = 38.dp, top = 18.dp, bottom = 18.dp, end = 38.dp)
         ) {
             Image(
                 painter = painterResource(id = R.drawable.twitter),
-                contentDescription = "This is gmail"
+                contentDescription = "This is twitter"
             )
         }
+
     }
 
 }
